@@ -23,8 +23,13 @@
                 </div>
                 <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
                 <div class="chute container__botones">
-                    <button onclick="verificarIntento();" class="container__boton">Intentar</button>
+                    <button onclick="verificarIntento();" class="container__boton" id="intentar" disabled>Intentar</button>
                     <button onclick="reiniciarJuego()" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
+                </div>
+                <div class="chute container__botones">
+                    <button onclick="juego_facil()" class="container__boton" id="facil" disabled>Facil</button>
+                    <button onclick="juego_normal()" class="container__boton" id="normal" disabled>Normal</button>
+                    <button onclick="juego_dificil()" class="container__boton" id="dificil" disabled>Dificil</button>
                 </div>
             </div>
             <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
