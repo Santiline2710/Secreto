@@ -95,7 +95,7 @@ function juego_facil(){
     intentos_maximos = 5;
     numeroMaximo = 10;
     numeroSecreto = generarNumeroSecreto();
-    asignarTextoElemento("p",`Indica un número del 1 al ${numeroMaximo}, tienes ${intentos_maximos}`);
+    asignarTextoElemento("p",`Indica un número del 1 al ${numeroMaximo}, tienes ${intentos_maximos} intentos`);
     document.getElementById("intentar").removeAttribute("disabled");
     document.getElementById("normal").setAttribute("disabled",true);
     document.getElementById("dificil").setAttribute("disabled",true);
@@ -107,7 +107,7 @@ function juego_normal(){
     intentos_maximos = 3;
     numeroMaximo = 10;
     numeroSecreto = generarNumeroSecreto();
-    asignarTextoElemento("p", `Indica un número del 1 al ${numeroMaximo}, tienes ${intentos_maximos}`);
+    asignarTextoElemento("p", `Indica un número del 1 al ${numeroMaximo}, tienes ${intentos_maximos} intentos`);
     document.getElementById("intentar").removeAttribute("disabled");
     document.getElementById("normal").setAttribute("disabled",true);
     document.getElementById("dificil").setAttribute("disabled",true);
@@ -119,7 +119,7 @@ function juego_dificil(){
     intentos_maximos = 3;
     numeroMaximo = 15;
     numeroSecreto = generarNumeroSecreto();
-    asignarTextoElemento("p", `Indica un número del 1 al ${numeroMaximo}, tienes ${intentos_maximos}`); 
+    asignarTextoElemento("p", `Indica un número del 1 al ${numeroMaximo}, tienes ${intentos_maximos} intentos`); 
     document.getElementById("intentar").removeAttribute("disabled");
     document.getElementById("normal").setAttribute("disabled",true);
     document.getElementById("dificil").setAttribute("disabled",true);
